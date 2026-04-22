@@ -13,6 +13,7 @@ import logo6 from "../assets/images/logo6.png";
 import logo7 from "../assets/images/logo7.png";
 import logo8 from "../assets/images/logo8.png";
 import mens from "../assets/images/mens.webp";
+import female from "../assets/images/female.png";
 import img1 from "../assets/images/1.png";
 import img2 from "../assets/images/2.jpeg";
 import img3 from "../assets/images/3.png";
@@ -24,8 +25,10 @@ import img8 from "../assets/images/8.jpeg";
 import r1 from "../assets/images/R1.jpg";
 import r2 from "../assets/images/R2.jpg";
 import r3 from "../assets/images/R3.jpg";
-import { FaStar } from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
 import { FiArrowRight } from "react-icons/fi";
+import { FiSend } from "react-icons/fi";
+import { FaStar } from "react-icons/fa";
 
     const data = [
     {
@@ -369,6 +372,55 @@ export default function Home() {
 
         <div className="custom-right">
           <img src={mens} alt="" />
+        </div>
+
+      </div>
+    </section>
+
+     <section className="contact-section">
+      <div className="contact-container">
+
+        <div className="contact-left">
+          <div className="contact-info">
+            <FiPhoneCall className="phone-icon" />
+
+            <p className="contact-call">
+               <span className="span">Call Support Center 24/7</span> <br />
+               07367674000
+            </p>
+
+            <div className="contact-email-box">
+              < FiSend className="phone-icon" />
+              <p className="write">Write To Us</p>
+              <p className="email">info@vanlocksecurity.co.uk</p>
+            </div>
+          </div>
+
+          <div className="contact-image">
+            <img src={female} alt="" />
+          </div>
+        </div>
+
+        <div className="contact-right">
+          <p className="contact-subtitle">CONTACT US</p>
+
+          <h2 className="contact-title">Get in touch with us</h2>
+
+          <form className="contact-form">
+            <div className="form-row">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+
+            <div className="form-row">
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Phone Number" />
+            </div>
+
+            <textarea placeholder="Message"></textarea>
+
+            <button type="submit">Submit Form</button>
+          </form>
         </div>
 
       </div>
